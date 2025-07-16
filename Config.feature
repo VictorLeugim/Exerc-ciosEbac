@@ -1,4 +1,4 @@
-            #language: pt
+#language: pt
 
             Funcionalidade: Configurar produto
             Como cliente da EBAC-SHOP
@@ -16,14 +16,12 @@
 
             Cenário: Cliente excede o limite de quantidade permitido
             Quando o cliente seleciona a quantidade 11
-            Então o sistema não deve permitir essa quantidade
-            E deve exibir a mensagem "Limite máximo excedido"
+            Então o sistema deve exibir a mensagem "Limite máximo excedido"
 
 
             Esquema do Cenário: Cliente escolhe quantidade
-            Quando o cliente seleciona a quantidade <quantidade>
-            Então o sistema deve exibir a quantidade <quantidade> como selecionada
-            E deve exibir a mensagem <mensagem>
+            Quando o cliente seleciona a <quantidade>
+            Então o sistema deve exibir a <mensagem>
 
             Exemplos:
 
@@ -35,10 +33,8 @@
 
 
             Esquema do Cenário: Cliente escolhe tamanho e cor
-            Quando o cliente seleciona o tamanho <tamanho>
-            E seleciona a cor <cor>
-            Então o sistema deve exibir o tamanho <tamanho> como selecionado
-            E deve exibir a cor <cor> como selecionada
+            Quando o cliente seleciona o <tamanho> e a <cor>
+            Então o sistema deve exibi-los conforme selecionado
 
             Exemplos:
 
@@ -61,10 +57,8 @@
 
 
             Cenário: Cliente tenta adicionar produto ao carrinho preenchendo apenas o tamanho
-            Quando o cliente seleciona o tamanho "M"
-            E clica em "Adicionar ao carrinho"
+            Quando o cliente seleciona o tamanho "M" e clica em "Adicionar ao carrinho"
             Então o sistema deve exibir a mensagem "Preencher todos os campos obrigatórios antes de adicionar o produto"
-
 
 
 
