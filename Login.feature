@@ -1,4 +1,4 @@
-            #language: pt
+           #language: pt
 
             Funcionalidade: Login na plataforma
             Como cliente da EBAC-SHOP
@@ -9,17 +9,15 @@
             Dado que o cliente acessa a página de autenticação
 
             Cenário: Cliente realiza uma autenticação válida
-            Quando o cliente informa o usuário "joaofelipe@ebac.com.br"
-            E informa a senha "12345@"
+            Quando o cliente informa o usuário "joaofelipe@ebac.com.br" e informa a senha "12345@"
             Então o sistema deve exibir uma mensagem "Login efetuado com sucesso"
-            E deve redirecionar para a tela de checkout
 
 
-            Cenário: Campos obrigatórios não preenchidos
-            Quando o cliente informa o usuário <usuario>
-            E informa a senha <senha>
-            Então o sistema deve exibir a mensagem <mensagem_usuario> no campo de usuário
-            E deve exibir a mensagem <mensagem_senha> no campo de senha
+            Esquema do Cenário: Campos obrigatórios não preenchidos
+            Quando o cliente informa o <usuario> e a <senha>
+            Então o sistema deve exibir a <mensagem_usuario> para o campo de usuário
+            E a <mensagem_senha> para o campo de senha
+        
 
             Exemplos:
 
@@ -31,10 +29,8 @@
 
 
             Esquema do Cenário: Cliente realiza uma autenticação inválida
-            Quando o cliente informa o usuário <usuario>
-            E informa a senha <senha>
-            Então o sistema deve exibir uma mensagem <mensagem>
-            E o cliente deve permanecer na área de login
+            Quando o cliente informa o <usuario> e a <senha>
+            Então o sistema deve exibir uma <mensagem>
 
             Exemplos:
 
