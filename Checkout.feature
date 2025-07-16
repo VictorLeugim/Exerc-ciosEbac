@@ -1,3 +1,5 @@
+            #language: pt
+            
             Funcionalidade: Realização de cadastro
             Como cliente da EBAC-SHOP
             Quero fazer concluir meu cadastro
