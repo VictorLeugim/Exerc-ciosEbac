@@ -1,5 +1,3 @@
-            #language: pt
-
             Funcionalidade: Realização de cadastro
             Como cliente da EBAC-SHOP
             Quero fazer concluir meu cadastro
@@ -10,15 +8,12 @@
             Dado que o cliente esteja na página de checkout
 
             Cenário: Cadastro realizado com sucesso
-            Quando o cliente preenche todos os campos obrigatórios
-            E clica em "FINALIZAR COMPRA"
+            Quando o cliente preenche todos os campos obrigatórios e clica em "Finalizar a compra"
             Então o sistema deve realizar o cadastro
-            E deve finalizar a compra
 
             Esquema do Cenário: Validação de campos obrigatórios não preenchidos
-            Quando o cliente tenta finalizar a compra sem preencher o campo <campo> obrigatório
-            Então o sistema deve informar uma mensagem <mensagem>
-            E não deve permitir a finalização da compra
+            Quando o cliente tenta finalizar a compra sem preencher o <campo> obrigatório
+            Então o sistema deve informar uma <mensagem>
 
             Exemplos:
 
@@ -34,9 +29,8 @@
 
 
             Esquema do Cenário: Email com formato inválido
-            Quando o cliente tenta finalizar a compra com o email <email> que possui um formato inválido
-            Então o sistema deve informar uma mensagem <mensagem>
-            E não deve permitir a finalização da compra
+            Quando o cliente tenta finalizar a compra com o <email> que possui um formato inválido
+            Então o sistema deve informar uma <mensagem>
 
             Exemplos:
 
@@ -51,9 +45,6 @@
             Cenário: Tentativa de finalizar o cadastro com campos obrigatórios vazios
             Quando o cliente tenta se cadastrar com um ou mais campos obrigatórios vazios
             Então o sistema deve informar uma mensagem "Por favor, preencha todos os campos obrigatórios marcados com *"
-            E não deve permitir a conclusão do cadastro
-
-
 
 
 
